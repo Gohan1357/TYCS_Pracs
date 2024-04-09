@@ -1,4 +1,4 @@
-#RSS Web Feed 
+#RSS WEB FEED PRACTICAL
 
 <p><b>Choose category:</b>
 <form method="post" id="myform">
