@@ -1,1 +1,28 @@
+OMNET CODE 
+
+import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+import inet.node.inet.AdhocHost;
+import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
+
+network Net2
+{
+    parameters:
+        int numOfHosts;
+
+    submodules:
+        host[numOfHosts]: AdhocHost
+        {
+            @display("r=,,#707070");
+        }
+
+        configurator: IPv4NetworkConfigurator
+        {
+            @display("p=219,73");
+        }
+
+        radioMedium: Ieee80211ScalarRadioMedium{
+            parameters:
+                @display("p=100,250");
+        }
+}
 
