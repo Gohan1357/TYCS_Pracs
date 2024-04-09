@@ -1,4 +1,4 @@
-OMNET CODE 
+OMNET CODE2 - ADHOC NETWORK 
 
 import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
 import inet.node.inet.AdhocHost;
@@ -25,4 +25,47 @@ network Net2
                 @display("p=100,250");
         }
 }
+
+
+
+
+
+OMNETCODE - WIRELESS SENSOR NETWORK
+
+import inet.examples.adhoc.hostautoconf.Host;
+import inet.networklayer.configurator.ipv4.IPv4NetworkConfigurator;
+import inet.node.inet.WirelessHost;
+import inet.node.wireless.AccessPoint;
+import inet.physicallayer.ieee80211.packetlevel.Ieee80211ScalarRadioMedium;
+
+network Net2
+{
+    parameters:
+        int numOfHosts;
+
+    submodules:
+        host[numOfHosts]: WirelessHost
+        {
+            @display("r=,,#707070");
+        }
+
+        ap: AccessPoint
+        {
+            @display("p=213,174;r=,,#707070");
+        }
+
+        configurator: IPv4NetworkConfigurator
+        {
+            @display("p=140,50");
+        }
+
+        radioMedium: Ieee80211ScalarRadioMedium{
+            parameters:
+                @display("p=100,250");
+        }
+}
+
+
+
+
 
