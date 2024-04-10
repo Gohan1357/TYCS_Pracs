@@ -68,4 +68,17 @@ network Net2
 
 
 
+OSPF COMMANDS:
+
+
+GO TO CLI
+
+router ospf 1
+
+network (ip) (subnet mask)  area 0 
+
+do it for all routers 
+
+
+
 
