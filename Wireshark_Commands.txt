@@ -1,0 +1,58 @@
+wireshark 
+- Launch Wireshark GUI to start capturing and analyzing network traffic.
+
+wireshark -r <file> - Open a captured packet capture file for analysis.
+
+wireshark -i <interface> - Start capturing packets on a specific network interface.
+
+wireshark -Y <display filter> 
+- Display only packets matching the specified display filter.
+
+wireshark -f <capture filter> 
+- Capture packets using a specific capture filter expression.
+
+wireshark -n 
+- Disable name resolution to display IP addresses instead of hostnames.
+
+wireshark -q 
+- Launch Wireshark in quiet mode without displaying the GUI.
+
+wireshark -d <decode_as> 
+- Decode traffic as a specific protocol or port number.
+
+wireshark -S <snaplen> 
+- Set the snapshot length to limit the amount of data captured per packet.
+
+wireshark -k 
+- Start a new capture immediately after the current capture stops.
+
+wireshark -w <output_file> 
+- Write captured packets to a specified output file.
+
+wireshark -z <statistics> 
+- Display specific protocol or traffic statistics.
+
+wireshark -o <preferences> 
+- Set preferences or configuration options at launch.
+
+wireshark -h 
+- Display help information about Wireshark command-line options.
+
+wireshark -F <output_format> 
+- Specify the output file format for captured packets.
+
+wireshark -x 
+- Print hex and ASCII dump of packet data in addition to packet details.
+
+wireshark -E <display_filter> 
+- Apply a display filter expression when opening a capture file.
+
+wireshark -R <read_filter> 
+- Read packets matching the specified read filter from the capture file.
+
+wireshark -d tcp.port==<port>,http 
+- Decode traffic on a specific TCP port as HTTP protocol.
+
+wireshark -D 
+- List available capture interfaces and their associated identifiers.
+
