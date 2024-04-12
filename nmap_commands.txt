@@ -59,4 +59,23 @@ nmap -sL <targets_file> - List scan, simply list targets to scan without perform
 
 
 
+1) ACK command: nmap -sA -T4 mu.ac.in
+
+2) SYN Command(Stealth Scan) : nmap -sS www.mu.ac.in
+
+
+3)SYN Stealth for specific port :  nmap -sS -p23 www.mu.ac.in
+
+
+4)TCP FIN bit(Fast scan): nmap -sF -T4 www.mu.ac.in
+
+5)NULL scan (sends TCP segment to ports,port status )   : nmap -sN -T4 www.mu.ac.in
+
+
+6)XMAS Scan ( sets multiple flags in packets -FIN,PSH,URG )- nmap -sX www.mu.ac.in
+
+
+
+
+
 
